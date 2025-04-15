@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+body a {
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 1%;
+}
+
+#Titre{
+    height: 20px;
+    padding-top: 13%;
+    text-align: center;
+}
+#Photo{
+    background-image: url(/images/rigolo.jpg);
+    background-attachment: fixed;
+    background-size: 60%;
+    margin: 13%;
+    padding: 15%;
+    background-position: center;
+    border-radius: 20px;
+}
+
+
+#accroche{
+    display: flex ;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+}
+.titre{
+    text-align: center;
+    padding: 2%;
+}
+#Softskill ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+#MesCompétences ul{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3%;
+}
+#MesCompétences img{
+    width: 30%;
+margin: 7%;
+}

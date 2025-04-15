@@ -1,0 +1,97 @@
+#titrepr{
+    padding: 5%;
+}
+h1, h3{
+    text-align: center;
+}
+.p3D {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.p3D img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-in-out 1s;
+}
+
+.p3D img:hover {
+    width: 40%;
+}
+/*Calligraphie*/
+.Calligraphie {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Calligraphie img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all ease-in-out 1s;
+}
+
+.Calligraphie img:hover {
+    width: 40%;
+}
+
+/*projet appliqués*/
+
+.appliqués {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.appliqués img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: all ease-in-out 1s;
+}
+
+.appliqués img:hover {
+    width: 40%;
+}
+
+/*graphique*/
+
+.graphique {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.graphique img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-in-out 1s;
+}
+
+.graphique img:hover {
+    width: 35%;
+}
