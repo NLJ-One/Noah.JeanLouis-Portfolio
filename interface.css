@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(/images/Fond2.jpg);
+    background-image: url(Fond2.jpg);
     background-size: cover;
 
 }
@@ -26,7 +26,7 @@ body::after {
     left: -100%;
     opacity: 0;
     z-index: -2;
-    background-image: url(/images/Fond2.jpg);
+    background-image: url(Fond2.jpg);
     background-size: cover;
     background-position: center;
     transition: left 1s ease, opacity 1s ease;
