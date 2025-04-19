@@ -1,0 +1,38 @@
+#titreGraph {
+    margin-top: 5rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#RF {
+    background-color: #008dff;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+#RF img {
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+}
+
+.formdesc {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem;
+}
+
+#Ferrari {
+    background-color: #f40000;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#Ferrari img {
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+}

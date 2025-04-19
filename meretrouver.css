@@ -1,4 +1,4 @@
-.retrouver-section a:before{
+a::before{
     height: 0;
 }
 .retrouver-section {

@@ -1,20 +1,49 @@
-#titrepr{
-    padding: 5%;
+
+a::before{
+    height: 0;
 }
 h1, h3{
     text-align: center;
 }
+h1{
+    padding: 5%;
+}
+
+.scroll-indicator {
+    display: inline-block;
+    position: relative;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    background-color: #ffffff;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #000000;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    animation: bounce 3s infinite;
+    transition: background-color 0.4s;
+    border-radius: 40px;
+}
+
+.scroll-indicator:hover {
+    background-color: #000000;
+    color:white;
+    border: 1px solid white;
+}
+
+
 .p3D {
-    margin: 100px 0 0 200px;
-    width: 70%;
-    height: 450px;
+    height: 550px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
 }
 
 .p3D img {
-    width: 10%;
+    width: 20%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -25,18 +54,22 @@ h1, h3{
 .p3D img:hover {
     width: 40%;
 }
+.p3D a {
+    text-align: center;
+}
+
 /*Calligraphie*/
 .Calligraphie {
-    margin: 100px 0 0 200px;
-    width: 70%;
-    height: 450px;
+    height: 550px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
 }
 
 .Calligraphie img {
-    width: 10%;
+    width: 40%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -45,22 +78,24 @@ h1, h3{
 }
 
 .Calligraphie img:hover {
-    width: 40%;
+    width: 80%;
 }
-
+.Calligraphie a {
+    text-align: center;
+}
 /*projet appliqués*/
 
 .appliqués {
-    margin: 100px 0 0 200px;
-    width: 70%;
-    height: 450px;
+    height: 550px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
 }
 
 .appliqués img {
-    width: 10%;
+    width: 30%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -69,22 +104,26 @@ h1, h3{
 }
 
 .appliqués img:hover {
-    width: 40%;
+    width: 50%;
 }
 
+.appliqués a {
+    text-align: center;
+}
 /*graphique*/
 
 .graphique {
-    margin: 100px 0 0 200px;
-    width: 70%;
-    height: 450px;
+    height: 550px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
+    margin: 100 0 0 200px;
 }
 
 .graphique img {
-    width: 10%;
+    width: 40%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -93,5 +132,14 @@ h1, h3{
 }
 
 .graphique img:hover {
-    width: 35%;
+    width: 50%;
+}
+
+.graphique a {
+    text-align: center;
+}
+
+footer{
+    background-color: white;
+    color: black;
 }

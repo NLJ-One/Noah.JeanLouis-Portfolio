@@ -1,0 +1,32 @@
+
+#titreCA{
+        margin-top: 7%;
+        text-align: center;
+        padding: 3%;
+}
+
+.titreCT{
+        margin: 3%;
+        text-align: center;
+        padding: 7%;
+}
+#OmatoP{
+    display: grid;
+    grid-template-columns: 2fr 3fr ;
+    justify-items: center;
+    padding-top: 30px;
+}
+#OmatoP img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.descriptif{
+    text-align: center;
+    margin: 6%;
+}
+.descriptif h1{
+   margin: 5%;
+}
