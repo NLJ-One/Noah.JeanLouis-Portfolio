@@ -28,7 +28,7 @@ ul{
     text-align: center;
 }
 #Photo{
-    background-image: url(/images/rigolo.jpg);
+    background-image: url(rigolo.jpg);
     background-attachment: fixed;
     background-size: 60%;
     margin: 13%;
