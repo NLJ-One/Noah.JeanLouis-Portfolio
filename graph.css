@@ -36,3 +36,17 @@
     max-width: 100%;
     height: auto;
 }
+
+#Carlos {
+    background-color: #f5c569;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+#Carlos img {
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+}
