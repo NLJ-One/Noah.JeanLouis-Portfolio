@@ -38,41 +38,6 @@ body a {
     padding: 27%;
 }
 
-.scroll-indicator {
-    display: inline-block;
-    position: relative;
-    bottom: 20px;
-    left: 100%;
-    transform: translateX(-50%);
-    font-size: 1.2rem;
-    background-color: #000000;
-    padding: 12px 30px;
-    text-decoration: none;
-    color: #ffffff;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    animation: bounce 3s infinite;
-    transition: background-color 0.4s;
-    border-radius: 40px;
-}
-
-.scroll-indicator:hover {
-    background-color: #808080;
-}
-a.scroll-indicator::before {
-    content: none;
-  }
-@keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateX(-50%) translateY(0);
-    }
-
-    70% {
-        transform: translateX(-50%) translateY(-10px);
-    }
-}
-
 a::before {
     height: 0;
 }
