@@ -80,3 +80,18 @@
     max-width: 100%;
     height: auto;
 }
+
+#Kb {
+    background-color: #232323;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    flex-direction: row-reverse;
+    color: white;
+}
+
+#Kb img {
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+}

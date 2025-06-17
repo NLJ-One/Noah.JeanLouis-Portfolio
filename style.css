@@ -32,11 +32,12 @@ body a {
 
 
 #impression {
-    background-image: url(Fond1.jpg);
+    background-image: url(/images/Fond1.jpg);
     background-attachment: fixed;
     background-size: cover;
     padding: 27%;
 }
+
 
 a::before {
     height: 0;
@@ -285,3 +286,33 @@ a:hover:before {
   .contact-form button:hover {
     background-color: #0056b3;
   }
+
+
+ @media (max-width: 768px) {
+  /* Styles pour les écrans de 768px ou moins (tablettes et mobiles) */
+  body {
+    font-size: 14px;
+  }
+ .Bloc1{
+    flex-direction: column-reverse;
+ }
+
+.Bloc2{
+    font-size: 20px;
+}
+
+.introduction{
+    flex-direction: column-reverse;
+}
+
+.introduction img{
+    margin: auto;
+}
+.intro p{
+    font-size: 15px;
+}
+
+.intro h1{
+    font-size: 20px;
+}
+}
