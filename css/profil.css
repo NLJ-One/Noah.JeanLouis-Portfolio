@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body a {
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 1%;
+}
+
+
+#accroche{
+    display: flex ;
+        flex-direction: column;
+        align-items: center;
+        padding: 3%;
+}
+
+#accroche img{
+width: 24%;
+border-radius: 10px;
+    box-shadow: 0 10px 35px rgba(149, 0, 255, 0.274);
+}
+
+#accroche h1{
+    padding-bottom: 3%;
+}
+#accroche p{
+    text-align: center;
+    margin: 4%;
+    font-size: 20px;
+}
+.titre{
+    text-align: center;
+    padding: 2%;
+}
+
+
+#activ{
+    display: grid;
+        grid-template-columns: 2fr 2fr ;
+        justify-items: center;
+        padding-top: 30px;
+        
+}
+
+
+#activ img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 10px 35px rgba(149, 0, 255, 0.274);
+}
+
+#Softskill ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+
+#Softskill li{
+    background: rgba(182, 79, 255, 0.112);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+height: 50px;
+width: 10%;
+    border-radius: 12px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+        align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(149, 0, 255, 0.145);
+}
+
+#MesCompétences h2{
+    font-size: 30px;
+    margin: 40px;
+}
+#MesCompétences p{
+    text-align: center;
+    margin: 1%;
+    padding: 3%;
+    font-size: 20px;
+}
+#MesCompétences ul{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 3%;
+}
+#MesCompétences img{
+    margin: 5%;
+}
+
+.card {
+    background: rgba(161, 139, 174, 0.407);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.234);
+    border-radius: 30px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 10px 35px rgba(149, 0, 255, 0.274);
+    transform: translateY(-7px); 
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+
+
+a::before{
+    height: 0;
+}

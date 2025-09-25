@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+#back{
+    background-image: url(/images/PC&.jpg);
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    margin-top: 6px;
+    margin-left: 76%;
+    background: rgba(182, 79, 255, 0.112);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(168, 146, 169, 0.225);
+    padding: 10px 20px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    margin: 8px;
+    text-align: center;
+}
+
+
+body a {
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#impression {
+    background-image: url(/images/Fond1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 27%;
+}
+
+
+a::before {
+    height: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 1%;
+}
+
+
+
+.Bloc2 {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    height: 100vh; 
+    font-size: 1.5em;
+    padding-left: 90px; 
+}
+
+
+#Choix {
+display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 10%;
+    margin: 10% auto auto;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#Choix a {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 2.5EM;
+    color: #000000; /* texte blanc pour contraste */
+
+    /* Effet glass */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 15, 125, 0.2);
+}
+
+#Choix a:hover {
+    background: rgba(237, 238, 255, 0.1); /* un peu plus clair */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 30, 255, 0.2);
+    color: rgba(0, 14, 113, 0.764);
+}
+
+#Choix a:active {
+    transform: translateY(0px);
+    box-shadow: 0 4px 12px rgba(0, 30, 255, 0.2);
+color: rgba(0, 14, 113, 0.764);
+}
+
+.Mesprojets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7%;
+    font-size: 23px;
+}
+
+.Mesprojets p {
+    font-size: 15px;
+}
+
+.Mesprojets img {
+    width: 35vw;
+    height: auto;
+    margin: 6px;
+}
+
+.Mesprojetsi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.Mesprojetsi a::before {
+    height: 0;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-top: 9%;
+    padding-bottom: 12%;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro a {
+    font-size: 20px;
+}
+
+.intro p {
+    font-size: 30px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.introduction img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.ligne {
+    padding-top: 3%;
+    width: 5%;
+    border-top: 2px solid rgba(205, 25, 255, 0.345);
+    margin: auto;
+    padding-bottom: 4;
+    margin-top: 10%;
+}
+
+.contact ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 4%;
+    padding-top: 3%;
+}
+
+
+/* Effets */
+
+a {
+    position: relative;
+}
+
+nav a:hover{
+    color: #9d39f6;
+    transition: all 0.3s ease;
+}
+
+.Effeti {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(0%);
+}
+
+.Effeti:hover {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*CV*/
+.download-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #5d009b;
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    margin-top: 1%;
+}
+
+.download-btn:hover {
+    background-color: #af26ff;
+    color: black;
+}
+
+a.download-btn::before {
+    content: none;
+}
+
+
+.contact-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #000000;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(149, 0, 255, 0.274);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: rgb(241, 241, 241);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: rgb(241, 241, 241);
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    border: 1px solid #d89ded;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #dea5ffb7;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #cc00ff;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #a02dff98;
+    color: rgb(241, 241, 241);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #c76cffb7;
+    color: #000000;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Styles pour les écrans de 768px ou moins (tablettes et mobiles) */
+    body {
+        font-size: 14px;
+    }
+
+    .Bloc1 {
+        flex-direction: column-reverse;
+    }
+
+    .Bloc2 {
+        font-size: 20px;
+    }
+
+    .introduction {
+        flex-direction: column-reverse;
+    }
+
+    .introduction img {
+        margin: auto;
+    }
+
+    .intro p {
+        font-size: 15px;
+    }
+
+    .intro h1 {
+        font-size: 20px;
+    }
+}
+
+
+.banner {
+width: 100%;
+overflow: hidden;
+padding: 10px 0;
+}
+
+
+.track {
+display: flex;
+gap: 20px;
+animation: scroll 20s linear infinite;
+}
+
+
+.track:hover {
+animation-play-state: paused; /* met en pause au survol */
+}
+
+
+.card img {
+height: 100px;
+display: block;
+}
+
+
+@keyframes scroll {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(-50%);
+}
+}

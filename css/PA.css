@@ -1,0 +1,106 @@
+#titrePA{
+    padding-top: 7%;
+    margin: 50px;
+    text-align: center;
+}
+
+#JATcouverture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#JATcouverture img{
+    width: 20%;
+}
+
+#JATcheminement{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        margin: 2%;
+}
+
+#JATcheminement img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+
+}
+
+
+#Solstice1{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 6px;
+        margin: 2% auto;
+        width: 90%;
+}
+
+#Solstice1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+        display: flex;
+
+}
+
+#Solstice2{
+    display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 6px;
+        margin: 2% auto;
+}
+
+#Solstice2 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+
+}
+
+#Solstice3{
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: 6px;
+        margin: 2%;
+}
+
+#Solstice3 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+
+}
+
+#Solstice4{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        margin: 2% auto;
+        width: 40%;
+}
+
+#Solstice4 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        display: block;
+
+}
+
+
+
+
+.descriptif{
+    text-align: center;
+    margin: 4%;
+}
+.descriptif h1{
+    margin: 2%;
+}
