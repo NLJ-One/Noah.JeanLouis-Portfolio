@@ -10,11 +10,11 @@ html {
 
 body {
     font-family: "Ubuntu", sans-serif;
-background-color: rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32);
     color: white;
 }
 
-#back{
+#back {
     background-image: url(/images/PC&.jpg);
     background-size: cover;
 }
@@ -45,13 +45,6 @@ body a {
     font-family: "Ubuntu", sans-serif;
 }
 
-#impression {
-    background-image: url(/images/Fond1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 27%;
-}
-
 
 a::before {
     height: 0;
@@ -70,118 +63,15 @@ nav ul {
 
 .Bloc2 {
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    height: 100vh; 
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     font-size: 1.5em;
-    padding-left: 90px; 
+    padding-left: 90px;
 }
 
 
-#Choix {
-display: flex;
-    gap: 100px;
-    justify-content: center;
-    margin-top: 10%;
-    margin: 10% auto auto;
-    flex-direction: column;
-    align-items: center;
 
-}
-
-#Choix a {
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 12px;
-    font-family: Arial, sans-serif;
-    font-size: 2.5EM;
-    color: #000000; /* texte blanc pour contraste */
-
-    /* Effet glass */
-    background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 15, 125, 0.2);
-}
-
-#Choix a:hover {
-    background: rgba(237, 238, 255, 0.1); /* un peu plus clair */
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 30, 255, 0.2);
-    color: rgba(0, 14, 113, 0.764);
-}
-
-#Choix a:active {
-    transform: translateY(0px);
-    box-shadow: 0 4px 12px rgba(0, 30, 255, 0.2);
-color: rgba(0, 14, 113, 0.764);
-}
-
-.Mesprojets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 7%;
-    font-size: 23px;
-}
-
-.Mesprojets p {
-    font-size: 15px;
-}
-
-.Mesprojets img {
-    width: 35vw;
-    height: auto;
-    margin: 6px;
-}
-
-.Mesprojetsi {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-}
-
-.Mesprojetsi a::before {
-    height: 0;
-}
-
-.introduction {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    margin-top: 9%;
-    padding-bottom: 12%;
-}
-
-.intro h1 {
-    font-size: 50px;
-}
-
-.intro a {
-    font-size: 20px;
-}
-
-.intro p {
-    font-size: 30px;
-}
-
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-}
-
-.introduction img {
-    width: 20%;
-    border-radius: 50%;
-}
 
 .ligne {
     padding-top: 3%;
@@ -208,7 +98,7 @@ a {
     position: relative;
 }
 
-nav a:hover{
+nav a:hover {
     color: #9d39f6;
     transition: all 0.3s ease;
 }
@@ -325,62 +215,51 @@ a.download-btn::before {
         font-size: 14px;
     }
 
-    .Bloc1 {
-        flex-direction: column-reverse;
+    nav {
+        margin-left: 15%;
     }
 
-    .Bloc2 {
-        font-size: 20px;
-    }
 
-    .introduction {
-        flex-direction: column-reverse;
-    }
 
-    .introduction img {
-        margin: auto;
-    }
+.Bloc2 {
+    font-size: 20px;
+}
 
-    .intro p {
-        font-size: 15px;
-    }
-
-    .intro h1 {
-        font-size: 20px;
-    }
 }
 
 
 .banner {
-width: 100%;
-overflow: hidden;
-padding: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
 }
 
 
 .track {
-display: flex;
-gap: 20px;
-animation: scroll 20s linear infinite;
+    display: flex;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
 }
 
 
 .track:hover {
-animation-play-state: paused; /* met en pause au survol */
+    animation-play-state: paused;
+    /* met en pause au survol */
 }
 
 
 .card img {
-height: 100px;
-display: block;
+    height: 100px;
+    display: block;
 }
 
 
 @keyframes scroll {
-from {
-transform: translateX(0);
-}
-to {
-transform: translateX(-50%);
-}
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
