@@ -208,9 +208,9 @@ a.download-btn::before {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-    /* Styles pour les écrans de 768px ou moins (tablettes et mobiles) */
+
     body {
         font-size: 14px;
     }
