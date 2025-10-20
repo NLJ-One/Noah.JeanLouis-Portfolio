@@ -180,14 +180,14 @@ a.download-btn::before {
     border: 1px solid #d89ded;
     border-radius: 8px;
     font-size: 1rem;
-    background-color: #dea5ffb7;
+    background-color: #ffffffd6;
     transition: border-color 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #cc00ff;
+    border-color: #fdf3ff;
 }
 
 .contact-form button {
