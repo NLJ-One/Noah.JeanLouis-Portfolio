@@ -72,9 +72,10 @@ border-radius: 10px;
 }
 
 #Softskill li{
-    background: rgba(182, 79, 255, 0.112);
+    background: rgba(252, 247, 255, 0.87);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    color: black;
 height: 50px;
 width: 10%;
     border-radius: 12px;
@@ -107,7 +108,7 @@ width: 10%;
 }
 
 .card {
-    background: rgba(161, 139, 174, 0.407);
+    background: rgba(253, 249, 255, 0.619);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.234);
@@ -118,6 +119,7 @@ width: 10%;
     align-items: center;
     font-size: 18px;
     flex-direction: column;
+    color: black;
 }
 
 .card:hover {
