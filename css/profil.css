@@ -128,16 +128,12 @@
 
 /* Section Mes Compétences */
 #MesCompétences {
-    padding: var(--spacing-2xl, 96px) var(--spacing-md, 24px);
-    max-width: var(--container-max, 1400px);
-    margin: 0 auto;
-}
-
-#MesCompétences ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-lg, 48px);
-    list-style: none;
+    padding: var(--spacing-2xl, 96px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
 }
 
 #MesCompétences .card {
@@ -204,7 +200,7 @@
         gap: var(--spacing-sm, 16px);
     }
     
-    #MesCompétences ul {
+    #MesCompétences {
         grid-template-columns: 1fr;
     }
     
