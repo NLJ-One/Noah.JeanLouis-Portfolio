@@ -493,6 +493,7 @@ a.download-btn::before {
     margin: 0 auto var(--spacing-xl);
     padding: var(--spacing-xl) var(--spacing-lg);
     background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur);
     backdrop-filter: var(--glass-blur);
     border-radius: var(--radius-xl);
     border: 1px solid var(--glass-border);

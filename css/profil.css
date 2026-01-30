@@ -108,6 +108,7 @@
 #Softskill li {
     padding: 16px 32px;
     background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     color: var(--text-primary, #ffffff);
     border-radius: var(--radius-full, 9999px);
@@ -138,6 +139,7 @@
 
 #MesCompétences .card {
     background: rgba(255, 255, 255, 0.03);
+    -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-xl, 24px);
