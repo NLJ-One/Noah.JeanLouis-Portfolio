@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de projets - Noah Jean-Louis | Design, 3D, Graphisme, UI/UX">
+    <title>Mes Projets - Noah Jean-Louis</title>
+    
+    <link rel="shortcut icon" href="/images/coté lunette.jpg" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/projets.css">
-    <script src="/scroll.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="/images/coté lunette.jpg" type="image/x-icon">
-    <title>Portfolio Noah Jean-Louis</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7RYS6GM6VV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7RYS6GM6VV');
-</script>
+    
+    <!-- Scripts -->
+    <script src="/JS/scroll.js" defer></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RYS6GM6VV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7RYS6GM6VV');
+    </script>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav role="navigation" aria-label="Navigation principale">
             <ul>
-                <a href="index.html">
-                    <li>Accueil</li>
-                </a>
-                <a href="Profil.html">
-                    <li>Profil</li>
-                </a>
-                <a href="Mes projet.html">
-                    <li>Projets</li>
-                </a>
-                <a href="Me retrouver.html">
-                    <li>Réseaux</li>
-                </a>
-                <a href="#mecontacter">
-                    <li>Contact</li>
-                </a>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="Mes projet.html" aria-current="page">Projets</a></li>
+                <li><a href="Me retrouver.html">Réseaux</a></li>
+                <li><a href="#mecontacter">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,31 +46,39 @@
         <div id="titrepr">
             <a href="#P" class="scroll-indicator">Survolez et clicker sur mes projets</a>
         </div>
-        <h1 id="P">Projets 3D</h1>
+        <h1>Projets 3D</h1>
         <div class="p3D">
-            <a href="3D.html"><img src="/images/bugatti tourbillon red and black(2).png" />
-                <img src="/images/untitled.png" />
-                <img src="/images/mercedesa45.png" /></a>
+            <a href="3D.html" aria-label="Voir les projets 3D">
+                <img src="/images/bugatti tourbillon red and black(2).png" alt="Modèle 3D Bugatti Tourbillon" />
+                <img src="/images/untitled.png" alt="Projet 3D design" />
+                <img src="/images/mercedesa45.png" alt="Modèle 3D Mercedes A45" />
+            </a>
         </div>
 
-                <h1>Design Ui Ux/Ergonomique</h1>
+        <h1>Design Ui Ux/Ergonomique</h1>
         <div class="Ux">
-            <a href="Ux.html"> <img src="/images/Accueil .png" /></a>
+            <a href="Ux.html" aria-label="Voir les projets UI/UX">
+                <img src="/images/Accueil .png" alt="Maquette UI interface d'accueil" />
+            </a>
         </div>
-                <h1>Projets Appliqués</h1>
+        
+        <h1>Projets Appliqués</h1>
         <div class="appliqués">
-            <a href="PA.html"><img src="/images/B post 2.jpg" />
-                <img src="/images/JAT logo 1.png" /></a>
-
+            <a href="PA.html" aria-label="Voir les projets appliqués">
+                <img src="/images/B post 2.jpg" alt="Design post réseaux sociaux" />
+                <img src="/images/JAT logo 1.png" alt="Logo JAT" />
+            </a>
         </div>
-                <h1>Graphique</h1>
+        
+        <h1>Graphique</h1>
         <div class="graphique">
-            <a href="graph.html"><img src="/images/renault rafale.jpg" />
-                <img src="/images/Ferrari 418 spyder.jpg" />
-                <img src="/images/Carlos Santana.jpg" />
-                <img src="/images/Drake black.jpg">
-                <img src="/images/King Von last.jpg"></a>
-
+            <a href="graph.html" aria-label="Voir les projets graphiques">
+                <img src="/images/renault rafale.jpg" alt="Design graphique Renault Rafale" />
+                <img src="/images/Ferrari 418 spyder.jpg" alt="Design graphique Ferrari 418 Spyder" />
+                <img src="/images/Carlos Santana.jpg" alt="Poster Carlos Santana" />
+                <img src="/images/Drake black.jpg" alt="Poster Drake" />
+                <img src="/images/King Von last.jpg" alt="Poster King Von" />
+            </a>
         </div>
     </main>
     <footer id="mecontacter">

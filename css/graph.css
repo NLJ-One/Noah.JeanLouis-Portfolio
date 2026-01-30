@@ -1,97 +1,107 @@
+/* ===================================
+   PAGE PROJETS GRAPHIQUES
+   =================================== */
+
 #titreGraph {
-    margin-top: 5rem;
     text-align: center;
-    padding: 1.5rem;
+    padding: var(--spacing-2xl, 96px) var(--spacing-md, 24px) var(--spacing-xl, 64px);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-#RF {
-    background-color: #008dff;
-    display: flex;
-    padding: 1.5rem;
+/* Sections projets avec couleurs brand */
+#RF, #Ferrari, #Carlos, #Drake, #King {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl, 64px);
     align-items: center;
+    padding: var(--spacing-2xl, 96px) var(--spacing-xl, 64px);
+    margin: var(--spacing-xl, 64px) 0;
+    border-radius: var(--radius-xl, 24px);
+    position: relative;
+    overflow: hidden;
 }
 
-#RF img {
-    width: 25%;
-    max-width: 100%;
-    height: auto;
-}
-
-.formdesc {
-    display: flex;
-    flex-direction: column;
-    margin: 2.5rem;
+/* Effet glassmorphism avec couleurs */
+#RF {
+    background: linear-gradient(135deg, rgba(0, 141, 255, 0.1), rgba(0, 141, 255, 0.05));
+    border: 1px solid rgba(0, 141, 255, 0.2);
 }
 
 #Ferrari {
-    background-color: #f40000;
-    display: flex;
-    padding: 1.5rem;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-
-#Ferrari img {
-    width: 25%;
-    max-width: 100%;
-    height: auto;
+    background: linear-gradient(135deg, rgba(244, 0, 0, 0.1), rgba(244, 0, 0, 0.05));
+    border: 1px solid rgba(244, 0, 0, 0.2);
 }
 
 #Carlos {
-    background-color: #f5c569;
-    display: flex;
-    padding: 1.5rem;
-    align-items: center;
-    flex-direction: row;
-}
-
-#Carlos img {
-    width: 25%;
-    max-width: 100%;
-    height: auto;
+    background: linear-gradient(135deg, rgba(245, 197, 105, 0.1), rgba(245, 197, 105, 0.05));
+    border: 1px solid rgba(245, 197, 105, 0.2);
 }
 
 #Drake {
-    background-color: #000000;
-    display: flex;
-    padding: 1.5rem;
-    align-items: center;
-    flex-direction: row-reverse;
-    color: white;
-}
-
-#Drake img {
-    width: 25%;
-    max-width: 100%;
-    height: auto;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #KV {
-    background-color: #700000;
-    display: flex;
-    padding: 1.5rem;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-}
-
-#KV img {
-    width: 25%;
-    max-width: 100%;
-    height: auto;
+    background: linear-gradient(135deg, rgba(112, 0, 0, 0.2), rgba(112, 0, 0, 0.1));
+    border: 1px solid rgba(112, 0, 0, 0.3);
 }
 
 #Kb {
-    background-color: #232323;
-    display: flex;
-    padding: 1.5rem;
-    align-items: center;
-    flex-direction: row-reverse;
-    color: white;
+    background: linear-gradient(135deg, rgba(35, 35, 35, 0.3), rgba(35, 35, 35, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#Kb img {
-    width: 25%;
-    max-width: 100%;
+/* Images des projets */
+#RF img, #Ferrari img, #Carlos img, #Drake img, #KV img, #Kb img {
+    width: 100%;
+    max-width: 500px;
     height: auto;
+    border-radius: var(--radius-lg, 16px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#RF img:hover, #Ferrari img:hover, #Carlos img:hover, 
+#Drake img:hover, #KV img:hover, #Kb img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4);
+}
+
+/* Descriptions */
+.formdesc {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-md, 24px);
+}
+
+.formdesc h2 {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm, 16px);
+}
+
+.formdesc p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.7;
+    color: var(--text-secondary, #a0a0a0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #RF, #Ferrari, #Carlos, #Drake, #KV, #Kb {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+        text-align: center;
+    }
+    
+    #RF img, #Ferrari img, #Carlos img, #Drake img, #KV img, #Kb img {
+        max-width: 100%;
+    }
 }

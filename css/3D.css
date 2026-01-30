@@ -1,46 +1,81 @@
-#titre3D{
-    margin-top: 10%;
+/* ===================================
+   PAGE PROJETS 3D - Modern Layout
+   =================================== */
+
+#titre3D {
     text-align: center;
-    padding: 3%;
+    padding: var(--spacing-2xl, 96px) var(--spacing-md, 24px) var(--spacing-xl, 64px);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.Voitures{
+/* Section Voitures */
+.Voitures {
     display: grid;
-        grid-template-columns: 2fr 3fr ;
-        justify-items: center;
-        padding-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl, 64px);
+    padding: var(--spacing-xl, 64px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
 }
 
-.Voitures img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        display: block;
+.Voitures img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius-xl, 24px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
 }
 
-.premierplan {
-    grid-area: 2 / 3 / -2 / 2;
+.Voitures img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 60px rgba(59, 130, 246, 0.5);
 }
 
-.D-luxe{
+/* Design Luxe */
+.D-luxe {
     display: grid;
-        grid-template-columns: 2fr 3fr ;
-        justify-items: center;
-        padding-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl, 64px);
+    padding: var(--spacing-xl, 64px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
 }
 
-.D-luxe img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        display: block;
+.D-luxe img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius-xl, 24px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
 }
 
-.bb{
-    grid-area: 4 / -3 / 1 / -1;
+.D-luxe img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.5);
 }
 
-.descriptif{
+/* Descriptifs */
+.descriptif {
     text-align: center;
-    margin: 6%;
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.8;
+    color: var(--text-secondary, #a0a0a0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Voitures, .D-luxe {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg, 48px);
+    }
 }

@@ -1,81 +1,84 @@
-#titrePA{
-    padding-top: 7%;
-    margin: 50px;
+/* ===================================
+   PAGE PROJETS APPLIQUÉS
+   =================================== */
+
+#titrePA {
     text-align: center;
+    padding: var(--spacing-2xl, 96px) var(--spacing-md, 24px) var(--spacing-xl, 64px);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-#JATcouverture{
+/* Section JAT - Couverture */
+#JATcouverture {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: var(--spacing-xl, 64px);
+    padding: var(--spacing-xl, 64px) var(--spacing-md, 24px);
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#JATcouverture img{
-    width: 20%;
+#JATcouverture img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: var(--radius-xl, 24px);
+    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.4);
+    transition: all 0.3s ease;
 }
 
-#JATcheminement{
+#JATcouverture img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.6);
+}
+
+/* Grilles projets */
+#JATcheminement, #Solstice2 {
     display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6px;
-        margin: 2%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
 }
 
-#JATcheminement img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        display: block;
-
-}
-
-
-#Solstice1{
+#Solstice1, #Solstice3 {
     display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        gap: 6px;
-        margin: 2% auto;
-        width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
 }
 
-#Solstice1 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        display: block;
-        display: flex;
-
+#JATcheminement img, #Solstice1 img, #Solstice2 img, #Solstice3 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: var(--radius-lg, 16px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 
-#Solstice2{
-    display: grid;
-        grid-template-columns: 1fr 1fr ;
-        gap: 6px;
-        margin: 2% auto;
+#JATcheminement img:hover, #Solstice1 img:hover, #Solstice2 img:hover, #Solstice3 img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(59, 130, 246, 0.4);
 }
 
-#Solstice2 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        display: block;
-
-}
-
-#Solstice3{
-    display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        gap: 6px;
-        margin: 2%;
-}
-
-#Solstice3 img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover; 
-        display: block;
-
+/* Responsive */
+@media (max-width: 768px) {
+    #JATcheminement, #Solstice1, #Solstice2, #Solstice3 {
+        grid-template-columns: 1fr;
+    }
+    
+    #JATcheminement img, #Solstice1 img, #Solstice2 img, #Solstice3 img {
+        height: 300px;
+    }
 }
 
 #Solstice4{

@@ -1,99 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Noah Jean-Louis - Designer & Créatif Multidisciplinaire | Tech, Photo, Design, UI/UX">
+    <title>Noah Jean-Louis - Portfolio | Designer & Développeur</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/coté lunette.jpg" type="image/x-icon">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/scroll.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-        <link rel="shortcut icon" href="/images/coté lunette.jpg" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Noah Jean-Louis</title>
+    
+    <!-- Scripts -->
+    <script src="/JS/scroll.js" defer></script>
 </head>
 
 <body>
+    <!-- Navigation moderne glassmorphism -->
     <header>
-        <nav>
+        <nav role="navigation" aria-label="Navigation principale">
             <ul>
-                <a href="index.html">
-                    <li>Accueil</li>
-                </a>
-                <a href="Profil.html">
-                    <li>Profil</li>
-                </a>
-                <a href="Mes projet.html">
-                    <li>Projets</li>
-                </a>
-                <a href="Me retrouver.html">
-                    <li>Réseaux</li>
-                </a>
-                <a href="#mecontacter">
-                    <li>Contact</li>
-                </a>
+                <li><a href="index.html" aria-current="page">Accueil</a></li>
+                <li><a href="Profil.html">Profil</a></li>
+                <li><a href="Mes projet.html">Projets</a></li>
+                <li><a href="Me retrouver.html">Réseaux</a></li>
+                <li><a href="#mecontacter">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main id="back">
+
+    <!-- Hero Section -->
+    <main>
+        <section id="back" aria-label="Section héro">
             <div class="Bloc2">
                 <h1>Noah Jean-Louis</h1>
-                <h4>Etudiant BUT MMI </h4>
-                <h4>Généraliste</h4>
-    </div>
-        <div class="ligne"></div>
-            </main>
-            <div class="banner" aria-label="Bandeau défilant de visuels">
+                <h4>Étudiant BUT MMI</h4>
+                <h4>Designer & Créatif Multidisciplinaire</h4>
+                <h4>Tech · Photo · Design · UI/UX</h4>
+            </div>
+        </section>
 
-<div class="track" id="track">
+        <!-- Section divider -->
+        <div class="ligne" role="separator" aria-hidden="true"></div>
+        <!-- Section divider -->
+        <div class="ligne" role="separator" aria-hidden="true"></div>
 
-<div class="card"><img src="/images/microsoft Office.png" alt="Visuel 1"></div>
-<div class="card"><img src="/images/Les principaux codes.png" alt="Visuel 2"></div>
-<div class="card"><img src="/images/Blender-Emblem.png" alt="Visuel 3"></div>
-<div class="card"><img src="/images/audacity-icon-20.png" alt="Visuel 4"></div>
-<div class="card"><img src="/images/Adobe-Logo.png" alt="Visuel 5"></div>
-<div class="card"><img src="/images/react.png" alt="Visuel 6"></div>
-<div class="card"><img src="/images/wordpress.png" alt="Visuel 7"></div>
+        <!-- Banner Carousel - Compétences techniques -->
+        <section class="banner" aria-label="Technologies et compétences">
+            <div class="track" id="track">
+                <!-- Premier set -->
+                <div class="card"><img src="/images/microsoft Office.png" alt="Microsoft Office" loading="lazy"></div>
+                <div class="card"><img src="/images/Les principaux codes.png" alt="Développement Web" loading="lazy"></div>
+                <div class="card"><img src="/images/Blender-Emblem.png" alt="Blender 3D" loading="lazy"></div>
+                <div class="card"><img src="/images/audacity-icon-20.png" alt="Audacity" loading="lazy"></div>
+                <div class="card"><img src="/images/Adobe-Logo.png" alt="Adobe Creative Suite" loading="lazy"></div>
+                <div class="card"><img src="/images/react.png" alt="React" loading="lazy"></div>
+                <div class="card"><img src="/images/wordpress.png" alt="WordPress" loading="lazy"></div>
 
+                <!-- Duplication pour effet continu -->
+                <div class="card"><img src="/images/microsoft Office.png" alt="Microsoft Office" loading="lazy"></div>
+                <div class="card"><img src="/images/Les principaux codes.png" alt="Développement Web" loading="lazy"></div>
+                <div class="card"><img src="/images/Blender-Emblem.png" alt="Blender 3D" loading="lazy"></div>
+                <div class="card"><img src="/images/audacity-icon-20.png" alt="Audacity" loading="lazy"></div>
+                <div class="card"><img src="/images/Adobe-Logo.png" alt="Adobe Creative Suite" loading="lazy"></div>
+                <div class="card"><img src="/images/react.png" alt="React" loading="lazy"></div>
+                <div class="card"><img src="/images/wordpress.png" alt="WordPress" loading="lazy"></div>
+            </div>
+        </section>
+    </main>
 
-
-<div class="card"><img src="/images/microsoft Office.png" alt="Visuel 1"></div>
-<div class="card"><img src="/images/Les principaux codes.png" alt="Visuel 2"></div>
-<div class="card"><img src="/images/Blender-Emblem.png" alt="Visuel 3"></div>
-<div class="card"><img src="/images/audacity-icon-20.png" alt="Visuel 4"></div>
-<div class="card"><img src="/images/Adobe-Logo.png" alt="Visuel 5"></div>
-<div class="card"><img src="/images/react.png" alt="Visuel 6"></div>
-<div class="card"><img src="/images/wordpress.png" alt="Visuel 7"></div>
-
-</div>
-</div>
-
+    <!-- Footer moderne avec contact -->
     <footer id="mecontacter">
         <div class="contact">
             <ul>
-                <h1>
-                    <li>Me contacter</li>
-                </h1>
-                <li>Email: noahbusinessproject.jl@gmail.com</li>
-                <li>Tél: 06 74 36 35 90</li>
-                <a href="/docs/Noah Jean-Louis Cv alternancer 2025-2027.pdf" download class="download-btn">Télécharger mon CV</a>
+                <li><h1>Me contacter</h1></li>
+                <li>Email: <a href="mailto:noahbusinessproject.jl@gmail.com">noahbusinessproject.jl@gmail.com</a></li>
+                <li>Tél: <a href="tel:+33674363590">06 74 36 35 90</a></li>
+                <li>
+                    <a href="/docs/Noah Jean-Louis Cv alternancer 2025-2027.pdf" download class="download-btn">
+                        Télécharger mon CV
+                    </a>
+                </li>
             </ul>
         </div>
+
+        <!-- Formulaire de contact moderne -->
         <section class="contact-section">
             <h2>Contactez-moi</h2>
             <form action="https://formspree.io/f/xzzelogn" method="POST" class="contact-form">
-              <label for="name">Nom</label>
-              <input type="text" id="name" name="name" required>
-          
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-          
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-          
-              <button type="submit">Envoyer</button>
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom">
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="votre@email.com">
+            
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+            
+                <button type="submit">Envoyer le message</button>
             </form>
-          </section>
+        </section>
     </footer>
 </body>
-
 </html>
 

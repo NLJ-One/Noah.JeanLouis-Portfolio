@@ -1,91 +1,240 @@
+/* ===================================
+   PAGE PROJETS - Modern Grid Layout
+   =================================== */
 
-a::before{
+/* Reset liens projets */
+a::before {
     height: 0;
 }
-h1, h3{
+
+/* Titres sections */
+h1, h3 {
     text-align: center;
+    font-family: var(--font-display, "Space Grotesk", sans-serif);
 }
-h1{
-    padding: 5%;
+
+h1 {
+    padding: var(--spacing-xl, 64px) var(--spacing-md, 24px);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 9999px;
+}
+
+/* Indicateur scroll */
+#titrepr {
+    text-align: center;
+    padding: var(--spacing-xl, 64px) 0 var(--spacing-lg, 48px);
 }
 
 .scroll-indicator {
     display: inline-block;
-    position: relative;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 14px 28px;
     font-size: 1rem;
-    background-color: #000000;
-    padding: 10px 14px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    color: #ffffff;
     text-decoration: none;
-    color: #e8e8e8;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 40px;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .scroll-indicator:hover {
-    background-color: #000000;
-    color:white;
-    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
 }
 
-nav .p3D, .Calligraphie, .appliqués, .Ux, .MagazinePost:hover{
-color:#ffffff
-}
+/* ===================================
+   GRILLES PROJETS - Layout moderne
+   =================================== */
 
+/* Projets 3D */
 .p3D {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    background-color: rgb(0, 0, 0);
-    padding: 2%;
-    box-shadow: 0 10px 35px rgba(149, 0, 255, 0.274);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
+}
+
+.p3D a {
+    display: contents;
 }
 
 .p3D img {
-    width: 20%;
-    height: 100%;
+    width: 100%;
+    height: 400px;
     object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid white;
-    transition: all ease-in-out 1s;
+    border-radius: var(--radius-lg, 16px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: 2px solid transparent;
 }
 
 .p3D img:hover {
-    width: 40%;
-}
-.p3D a {
-    text-align: center;
-}
-
-/*Calligraphie*/
-.Calligraphie {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    background-color: rgb(0, 0, 0);
-    padding: 2%;
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4);
+    border-color: #3b82f6;
 }
 
-.Calligraphie img {
-    width: 40%;
-    height: 100%;
+/* UX/UI Design */
+.Ux {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg, 48px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
+}
+
+.Ux a {
+    display: contents;
+}
+
+.Ux img {
+    width: 100%;
+    height: 500px;
     object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid rgb(255, 255, 255);
-    transition: all ease-in-out 1s;
+    border-radius: var(--radius-xl, 24px);
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
-.Calligraphie img:hover {
-    width: 80%;
+.Ux img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 48px rgba(139, 92, 246, 0.5);
 }
-.Calligraphie a {
-    text-align: center;
+
+/* Projets Appliqués */
+.appliqués {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
 }
-/*projet appliqués*/
+
+.appliqués a {
+    display: contents;
+}
+
+.appliqués img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--radius-lg, 16px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.appliqués img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.4);
+}
+
+/* Projets Graphiques */
+.graphique {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px) var(--spacing-2xl, 96px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
+}
+
+.graphique a {
+    display: contents;
+}
+
+.graphique img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: var(--radius-md, 12px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.graphique img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4);
+    z-index: 10;
+}
+
+/* ===================================
+   RESPONSIVE - Projets
+   =================================== */
+@media (max-width: 1024px) {
+    .p3D, .Ux, .appliqués {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-sm, 16px);
+    }
+    
+    .graphique {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: clamp(2rem, 6vw, 3rem);
+        padding: var(--spacing-lg, 48px) var(--spacing-sm, 16px);
+    }
+    
+    .p3D img, .appliqués img {
+        height: 300px;
+    }
+    
+    .Ux img {
+        height: 400px;
+    }
+    
+    .graphique {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .p3D, .Ux, .appliqués {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-md, 24px) var(--spacing-sm, 16px);
+    }
+    
+    .graphique {
+        grid-template-columns: 1fr;
+    }
+    
+    .scroll-indicator {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+}
 
 .appliqués {
     height: 600px;
