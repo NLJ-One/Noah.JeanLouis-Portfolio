@@ -94,8 +94,8 @@ nav {
     top: var(--spacing-md);
     right: var(--spacing-md);
     background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
     -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
     border-radius: var(--radius-full);
     border: 1px solid var(--glass-border);
     padding: 12px 24px;
