@@ -130,11 +130,12 @@
 /* Section Mes Compétences */
 #MesCompétences {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg, 48px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg, 48px) var(--spacing-md, 24px);
     padding: var(--spacing-2xl, 96px) var(--spacing-md, 24px);
-    max-width: var(--container-max, 1400px);
+    max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
 }
 
 #MesCompétences .card {
@@ -143,10 +144,17 @@
     backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-xl, 24px);
-    padding: var(--spacing-xl, 64px) var(--spacing-lg, 48px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 #MesCompétences .card:hover {
@@ -177,17 +185,29 @@
     font-weight: 700;
     margin-bottom: var(--spacing-md, 24px);
     color: var(--text-primary, #ffffff);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 #MesCompétences p {
     font-size: clamp(0.95rem, 2vw, 1.1rem);
     line-height: 1.7;
     color: var(--text-secondary, #a0a0a0);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* ===================================
    RESPONSIVE - Profil
    =================================== */
+@media (max-width: 1024px) {
+    #MesCompétences {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-md, 24px);
+    }
+}
+
 @media (max-width: 768px) {
     #accroche {
         padding: var(--spacing-xl, 64px) var(--spacing-md, 24px);
@@ -204,6 +224,8 @@
     
     #MesCompétences {
         grid-template-columns: 1fr;
+        padding: var(--spacing-xl, 64px) var(--spacing-md, 24px);
+        gap: var(--spacing-md, 24px);
     }
     
     #MesCompétences .card {
@@ -215,5 +237,13 @@
     #Softskill li {
         padding: 12px 20px;
         font-size: 0.9rem;
+    }
+    
+    #MesCompétences {
+        padding: var(--spacing-lg, 48px) var(--spacing-sm, 16px);
+    }
+    
+    #MesCompétences .card {
+        padding: var(--spacing-md, 24px) var(--spacing-sm, 16px);
     }
 }
