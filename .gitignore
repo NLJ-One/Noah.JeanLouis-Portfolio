@@ -5,5 +5,4 @@ images/**/*.MP4
 images/**/*.MOV
 
 # Keep only lightweight web videos in the repository
-!images/Photo_Vidéo/DWDI_Noah_JeanLouis_HorreurJumpscare.mp4
-!images/Photo_Vidéo/Blue_Night1.mov
+!images/Photo_Vidéo/*-web.mp4
