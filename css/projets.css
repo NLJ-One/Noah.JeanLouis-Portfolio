@@ -47,13 +47,13 @@ h1::after {
     padding: 14px 28px;
     font-size: 1rem;
     font-weight: 600;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     color: #ffffff;
     text-decoration: none;
     border-radius: 9999px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
@@ -151,11 +151,13 @@ h1::after {
     transition: all 0.3s ease;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
 .appliqués img:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 32px rgba(139, 92, 246, 0.4);
+    border-color: #8b5cf6;
 }
 
 /* Projets Graphiques */
@@ -188,16 +190,74 @@ h1::after {
     z-index: 10;
 }
 
+/* Photos */
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
+}
+
+.photos a {
+    display: contents;
+}
+
+.photos img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: var(--radius-lg, 16px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.photos img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.4);
+}
+
+/* Vidéos */
+.videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px) var(--spacing-2xl, 96px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
+}
+
+.videos a {
+    display: contents;
+}
+
+.videos video {
+    width: 100%;
+    height: 350px;
+    border-radius: var(--radius-lg, 16px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.videos video:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.4);
+}
+
 /* ===================================
    RESPONSIVE - Projets
    =================================== */
 @media (max-width: 1024px) {
-    .p3D, .Ux, .appliqués {
+    .p3D, .Ux, .appliqués, .photos {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: var(--spacing-sm, 16px);
     }
     
-    .graphique {
+    .graphique, .videos {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
@@ -208,7 +268,7 @@ h1::after {
         padding: var(--spacing-lg, 48px) var(--spacing-sm, 16px);
     }
     
-    .p3D img, .appliqués img {
+    .p3D img, .appliqués img, .photos img, .videos video {
         height: 300px;
     }
     
@@ -222,7 +282,7 @@ h1::after {
 }
 
 @media (max-width: 480px) {
-    .p3D, .Ux, .appliqués {
+    .p3D, .Ux, .appliqués, .photos, .videos {
         grid-template-columns: 1fr;
         padding: var(--spacing-md, 24px) var(--spacing-sm, 16px);
     }

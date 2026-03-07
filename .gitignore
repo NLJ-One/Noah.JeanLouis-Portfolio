@@ -1,0 +1,5 @@
+# Ignore heavy video source files (GitHub limit: 100MB per file)
+images/**/*.mp4
+images/**/*.mov
+images/**/*.MP4
+images/**/*.MOV

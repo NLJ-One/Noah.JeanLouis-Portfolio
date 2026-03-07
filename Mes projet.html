@@ -27,7 +27,7 @@
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RYS6GM6VV"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+        globalThis.dataLayer = globalThis.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-7RYS6GM6VV');
@@ -82,6 +82,35 @@
                 <img src="/images/Carlos Santana.jpg" alt="Poster Carlos Santana" />
                 <img src="/images/Drake black.jpg" alt="Poster Drake" />
                 <img src="/images/King Von last.jpg" alt="Poster King Von" />
+            </a>
+        </div>
+
+        <h1>Photos</h1>
+        <div class="photos">
+            <a href="Photos.html" aria-label="Voir la galerie photos">
+                <img src="/images/Photo_Vidéo/P1280224.JPG" alt="Galerie - Noah Jean-Louis" />
+            </a>
+        </div>
+
+        <h1>Vidéos</h1>
+        <div class="videos">
+            <a href="#" aria-label="Voir les vidéos">
+                <video controls>
+                    <source src="/images/Photo_Vidéo/BG avec colorimétrie.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+                <video controls>
+                    <source src="/images/Photo_Vidéo/Timeline 1.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+                <video controls>
+                    <source src="/images/Photo_Vidéo/C0331.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+                <video controls>
+                    <source src="/images/Photo_Vidéo/DWDI_Noah_JeanLouis_HorreurJumpscare.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
             </a>
         </div>
     </main>

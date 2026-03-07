@@ -1,38 +1,38 @@
-# 🎨 Portfolio Noah Jean-Louis
+# Portfolio Noah Jean-Louis
 
 > Designer & Créatif Multidisciplinaire | Tech · Photo · Design · UI/UX
 
 [![Netlify Status](https://img.shields.io/badge/Netlify-Live-success?style=flat&logo=netlify)](https://jeanlouisnoah.netlify.app/)
 
-## ✨ À Propos
+## À Propos
 
 Portfolio moderne et responsive présentant mes compétences en design, développement web, 3D, graphisme et UI/UX. Entièrement redesigné avec les tendances 2025.
 
-**🔗 Site en ligne :** [jeanlouisnoah.netlify.app](https://jeanlouisnoah.netlify.app/)
+**Site en ligne :** [jeanlouisnoah.netlify.app](https://jeanlouisnoah.netlify.app/)
 
 ---
 
-## 🚀 Améliorations & Refonte 2025
+## Améliorations & Refonte 2025
 
-### ✅ Design System Moderne
+### Design System Moderne
 - **Variables CSS** : Palette de couleurs cohérente (tech blue, design purple)
 - **Glassmorphism** : Effets de verre moderne sur navigation et cards
 - **Gradients dynamiques** : Dégradés tech pour les titres et CTAs
 - **Micro-animations** : Transitions fluides et hover effects subtils
 
-### 📱 Responsive Design
+### Responsive Design
 - **Mobile-first** : Optimisé pour tous les écrans
 - **Grid CSS moderne** : Layout adaptatif avec `auto-fit` et `minmax`
 - **Tailles fluides** : Utilisation de `clamp()` pour la typographie
 - **Breakpoints** : 480px, 768px, 1024px
 
-### 🎯 Accessibilité & SEO
+### Accessibilité & SEO
 - **Structure HTML5 sémantique** : `<header>`, `<nav>`, `<main>`, `<section>`
 - **ARIA labels** : Navigation accessible
 - **Alt texts** : Descriptions d'images optimisées
 - **Meta descriptions** : SEO amélioré sur toutes les pages
 
-### 🎨 Design Moderne
+### Design Moderne
 - **Typographie** : Inter + Space Grotesk (Google Fonts)
 - **Contrastes optimisés** : Ratio 4.5:1 minimum (WCAG AA)
 - **Palette de couleurs** :
@@ -41,7 +41,7 @@ Portfolio moderne et responsive présentant mes compétences en design, dévelop
   - Accent Purple : `#8b5cf6` (design)
   - Text : `#ffffff` / `#a0a0a0`
 
-### ⚡ Performance
+### Performance
 - **Polices préchargées** : `preconnect` pour Google Fonts
 - **Images optimisées** : `loading="lazy"` pour le lazy loading
 - **CSS organisé** : Design system avec variables réutilisables
@@ -49,7 +49,7 @@ Portfolio moderne et responsive présentant mes compétences en design, dévelop
 
 ---
 
-## 📂 Structure du Projet
+## Structure du Projet
 
 ```
 Noah.JeanLouis-Portfolio/
@@ -63,7 +63,7 @@ Noah.JeanLouis-Portfolio/
 ├── PA.html                # Projets appliqués
 │
 ├── css/
-│   ├── style.css          # ⭐ Design system principal
+│   ├── style.css          # Design system principal
 │   ├── projets.css        # Grid moderne projets
 │   ├── profil.css         # Page profil
 │   ├── meretrouver.css    # Page réseaux
@@ -82,7 +82,7 @@ Noah.JeanLouis-Portfolio/
 
 ---
 
-## 🛠️ Technologies Utilisées
+## Technologies Utilisées
 
 ### Frontend
 - **HTML5** - Structure sémantique moderne
@@ -102,7 +102,7 @@ Noah.JeanLouis-Portfolio/
 
 ---
 
-## 🎨 Palette de Couleurs
+## Palette de Couleurs
 
 ```css
 /* Backgrounds */
@@ -125,7 +125,7 @@ Noah.JeanLouis-Portfolio/
 
 ---
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 ```css
 /* Mobile */
@@ -140,7 +140,7 @@ Noah.JeanLouis-Portfolio/
 
 ---
 
-## 🚀 Déploiement
+## Déploiement
 
 Le site est déployé automatiquement sur **Netlify** :
 
@@ -153,13 +153,13 @@ Le site est déployé automatiquement sur **Netlify** :
 
 ---
 
-## 📊 Performances
+## Performances
 
-- ✅ **Responsive** : Optimisé mobile, tablet, desktop
-- ✅ **Accessibilité** : ARIA labels, contraste WCAG AA
-- ✅ **SEO** : Meta descriptions, structure sémantique
-- ✅ **Performance** : Lazy loading, fonts optimisées
-- ✅ **Modern CSS** : Grid, Flexbox, Custom Properties
+- **Responsive** : Optimisé mobile, tablet, desktop
+- **Accessibilité** : ARIA labels, contraste WCAG AA
+- **SEO** : Meta descriptions, structure sémantique
+- **Performance** : Lazy loading, fonts optimisées
+- **Modern CSS** : Grid, Flexbox, Custom Properties
 
 ---
 
@@ -175,19 +175,15 @@ Le site est déployé automatiquement sur **Netlify** :
 
 ---
 
-## 👤 Contact
+## Contact
 
 **Noah Jean-Louis**  
-📧 Email : [noahbusinessproject.jl@gmail.com](mailto:noahbusinessproject.jl@gmail.com)  
-📱 Tél : 06 74 36 35 90  
-💼 LinkedIn : [Noah Jean-Louis](https://www.linkedin.com/in/noah-jean-louis-386a91338/)
+Email : [noahbusinessproject.jl@gmail.com](mailto:noahbusinessproject.jl@gmail.com)  
+Tél : 06 74 36 35 90  
+LinkedIn : [Noah Jean-Louis](https://www.linkedin.com/in/noah-jean-louis-386a91338/)
 
 ---
 
-## 📄 Licence
+## Licence
 
 © 2025 Noah Jean-Louis. Tous droits réservés.
-
----
-
-**Fait avec ❤️ et beaucoup de ☕**

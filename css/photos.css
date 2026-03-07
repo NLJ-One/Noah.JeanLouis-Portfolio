@@ -1,0 +1,286 @@
+/* ===================================
+   GALERIE PHOTOS - Style Professionnel
+   =================================== */
+
+.back-link {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #3b82f6;
+    transform: translateX(-4px);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Galerie masonnerie - Optimisée */
+.photos-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px) var(--spacing-2xl, 96px);
+    max-width: 1400px;
+    margin: 0 auto;
+    will-change: contents;
+}
+
+.photos-gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-lg, 16px);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    opacity: 1;
+    contain: layout style paint;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(59, 130, 246, 0.05));
+}
+
+/* Loading state - placeholder background */
+.photos-gallery img[src*="?w=400"] {
+    filter: blur(0);
+    transition: filter 0.3s ease;
+}
+
+.photos-gallery img:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 16px 48px rgba(139, 92, 246, 0.5);
+    border-color: #8b5cf6;
+    opacity: 1;
+}
+
+.photos-gallery img:active {
+    transform: scale(0.98);
+}
+
+/* ===================================
+   LIGHTBOX - Modal Photo Optimisée
+   =================================== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease;
+    overflow: hidden;
+}
+
+.lightbox.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: var(--radius-lg, 16px);
+    animation: slideIn 0.3s ease;
+    will-change: transform;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    line-height: 1;
+}
+
+.close:hover {
+    color: #08d9ff;
+    background: rgba(0, 0, 0, 0.7);
+    border-color: #3b82f6;
+    transform: rotate(90deg);
+}
+
+/* Navigation Lightbox */
+.lightbox-nav {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: all;
+}
+
+.lightbox-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.lightbox-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: #3b82f6;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+    transform: scale(1.1);
+}
+
+.lightbox-btn:active {
+    transform: scale(0.95);
+}
+
+/* ===================================
+   RESPONSIVE - Galerie Photos
+   =================================== */
+
+@media (max-width: 1024px) {
+    .photos-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: var(--spacing-sm, 16px);
+        padding: var(--spacing-md, 24px);
+    }
+}
+
+@media (max-width: 768px) {
+    .photos-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: var(--spacing-sm, 16px);
+    }
+
+    .photos-gallery img {
+        height: 220px;
+    }
+
+    .close {
+        top: 20px;
+        right: 20px;
+        font-size: 32px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .lightbox-nav {
+        bottom: 20px;
+        gap: 10px;
+    }
+
+    .lightbox-btn {
+        padding: 10px 16px;
+        font-size: 18px;
+    }
+
+    .lightbox-content {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .photos-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: var(--spacing-xs, 12px);
+        padding: var(--spacing-sm, 16px);
+    }
+
+    .photos-gallery img {
+        height: 160px;
+    }
+
+    .close {
+        top: 15px;
+        right: 15px;
+        font-size: 28px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .lightbox-btn {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .back-link {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    .lightbox-content {
+        max-width: 98%;
+        max-height: 75vh;
+    }
+}
+
+/* Optimisation CPU rendering et compat Safari */
+@supports (backdrop-filter: blur(16px)) {
+    .back-link, .lightbox-btn {
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+    }
+}
+
+@supports not (backdrop-filter: blur(16px)) {
+    .back-link, .lightbox-btn {
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
