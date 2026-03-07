@@ -7,7 +7,7 @@
     padding: var(--spacing-2xl, 96px) var(--spacing-md, 24px) var(--spacing-xl, 64px);
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
-    background: linear-gradient(135deg, #ec4899, #8b5cf6);
+    background: var(--gradient-design);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

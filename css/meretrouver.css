@@ -16,7 +16,7 @@
     font-size: clamp(3rem, 6vw, 5rem);
     font-weight: 800;
     margin-bottom: var(--spacing-2xl, 96px);
-    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+    background: var(--gradient-full);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

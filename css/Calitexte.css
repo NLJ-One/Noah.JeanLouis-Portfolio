@@ -1,32 +1,84 @@
+/* ===================================
+   PAGE CALITEXTE - Modern Layout
+   =================================== */
 
-#titreCA{
-        margin-top: 7%;
-        text-align: center;
-        padding: 3%;
+#titreCA {
+    margin-top: var(--spacing-2xl, 96px);
+    text-align: center;
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    background: var(--gradient-design, linear-gradient(135deg, #8b5cf6, #ec4899));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.titreCT{
-        margin: 3%;
-        text-align: center;
-        padding: 7%;
+.titreCT {
+    margin: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    text-align: center;
+    padding: var(--spacing-xl, 64px) var(--spacing-md, 24px);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: var(--text-primary, #ffffff);
 }
-#OmatoP{
+
+#OmatoP {
     display: grid;
-    grid-template-columns: 2fr 3fr ;
-    justify-items: center;
-    padding-top: 30px;
+    grid-template-columns: 2fr 3fr;
+    gap: var(--spacing-lg, 48px);
+    align-items: center;
+    padding: var(--spacing-xl, 64px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
 }
-#OmatoP img{
+
+#OmatoP img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
+    border-radius: var(--radius-lg, 16px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: all var(--transition-base, 0.3s ease);
+    border: 2px solid transparent;
 }
 
-.descriptif{
-    text-align: center;
-    margin: 6%;
+#OmatoP img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.4);
+    border-color: rgba(139, 92, 246, 0.5);
 }
-.descriptif h1{
-   margin: 5%;
+
+.descriptif {
+    text-align: center;
+    margin: var(--spacing-xl, 64px) var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descriptif h1 {
+    margin: var(--spacing-lg, 48px) 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    background: var(--gradient-tech, linear-gradient(135deg, #3b82f6, #8b5cf6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.descriptif p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.8;
+    color: var(--text-secondary, #a0a0a0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #OmatoP {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md, 24px);
+    }
 }
