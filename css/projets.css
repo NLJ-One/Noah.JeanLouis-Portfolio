@@ -60,14 +60,45 @@ h1::after {
 
 .scroll-indicator:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: var(--accent-blue);
+    border-color: var(--accent-olive);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-glow-blue);
+    box-shadow: var(--shadow-glow-olive);
 }
 
 /* ===================================
    GRILLES PROJETS - Layout moderne
    =================================== */
+
+/* Projet en cours */
+.paysages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md, 24px);
+    padding: var(--spacing-lg, 48px) var(--spacing-md, 24px);
+    max-width: var(--container-max, 1400px);
+    margin: 0 auto;
+}
+
+.paysages a {
+    display: contents;
+}
+
+.paysages img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: var(--radius-xl, 24px);
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.paysages img:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 40px rgba(126, 138, 80, 0.35);
+    border-color: rgba(216, 199, 165, 0.7);
+}
 
 /* Projets 3D */
 .p3D {
@@ -96,8 +127,8 @@ h1::after {
 
 .p3D img:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4);
-    border-color: var(--accent-blue);
+    box-shadow: 0 12px 32px rgba(126, 138, 80, 0.4);
+    border-color: var(--accent-olive);
 }
 
 /* UX/UI Design */
@@ -151,13 +182,13 @@ h1::after {
     transition: all 0.3s ease;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    border: 1px solid rgba(139, 92, 246, 0.2);
+    border: 1px solid rgba(157, 149, 119, 0.2);
 }
 
 .appliqués img:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.4);
-    border-color: var(--accent-purple);
+    box-shadow: 0 12px 32px rgba(126, 138, 80, 0.28);
+    border-color: var(--accent-earth);
 }
 
 /* Projets Graphiques */
