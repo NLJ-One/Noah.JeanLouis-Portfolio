@@ -24,8 +24,8 @@
     
     /* Textes - Contraste adapté au vert olive */
     --text-primary: #F5F5F0;
-    --text-secondary: #D4D8C8;
-    --text-tertiary: #B8BCA8;
+    --text-secondary: #3c3607;
+    --text-tertiary: #dcdfd1;
     --text-on-primary: #F0F2E8;
     
     /* Couleurs d'accent - Variations vert olive */
@@ -33,16 +33,16 @@
     --accent-olive: #8B9A5B;
     --accent-forest: #556B2F;
     --accent-moss: #9CAF88;
-    --accent-earth: #6B7B3E;
+    --accent-earth: #523807;
     --accent-terre: #5A6B35;
     --accent-warm: #7A8B4A;
     
     /* Contraste WCAG - Texte sur fond sombre */
     --contrast-text: #F5F5F0;
-    --contrast-text-muted: #C8D0B8;
+    --contrast-text-muted: #f1f5ea;
     
     /* Glassmorphism optimisé */
-    --glass-bg: rgba(85, 107, 47, 0.85);
+    --glass-bg: rgba(49, 67, 17, 0.85);
     --glass-bg-hover: rgba(85, 107, 47, 0.95);
     --glass-border: rgba(245, 245, 240, 0.15);
     --glass-border-hover: rgba(165, 176, 122, 0.4);
@@ -97,9 +97,9 @@
     --z-nav: 1000;
     
     /* Gradients - Palette Vert Olive */
-    --gradient-tech: linear-gradient(135deg, #556B2F 0%, #8B9A5B 50%, #6B7B3E 100%);
-    --gradient-design: linear-gradient(135deg, #6B7B3E 0%, #8B9A5B 50%, #9CAF88 100%);
-    --gradient-full: linear-gradient(135deg, #556B2F 0%, #8B9A5B 25%, #6B7B3E 50%, #9CAF88 75%, #556B2F 100%);
+    --gradient-tech: linear-gradient(135deg, #97d826 0%, #9dbb3a 50%, #97c618 100%);
+    --gradient-design: linear-gradient(135deg, #97d826 0%, #9dbb3a 50%, #97c618 100%);
+    --gradient-full: linear-gradient(135deg,#97d826 0%, #9dbb3a 50%, #97c618 100%);
     --gradient-olive-light: linear-gradient(135deg, #8B9A5B 0%, #A5B07A 100%);
     --gradient-olive-dark: linear-gradient(135deg, #3D4A22 0%, #556B2F 100%);
 }
