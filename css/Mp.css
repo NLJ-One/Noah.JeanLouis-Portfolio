@@ -39,8 +39,8 @@
 
 #MJ img:hover {
     transform: scale(1.03);
-    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4);
-    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 12px 32px rgba(85, 107, 47, 0.4);
+    border-color: rgba(139, 154, 91, 0.5);
 }
 
 /* Responsive */

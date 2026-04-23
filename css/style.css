@@ -2,44 +2,61 @@
    DESIGN SYSTEM - Variables CSS
    =================================== */
 :root {
-    /* Couleurs principales */
-    --bg-primary: #1d1a14;
-    --bg-secondary: #27231c;
-    --bg-tertiary: #383127;
-    --bg-card: rgba(43, 38, 30, 0.95);
-    --text-primary: #f5efe4;
-    --text-secondary: #c9bfae;
-    --text-tertiary: #9c927f;
+    /* ===================================
+       DESIGN SYSTEM - Palette Vert Olive
+       =================================== */
+    /* Couleur principale - Vert olive foncé */
+    --primary: #556B2F;
+    --primary-dark: #3D4A22;
+    --primary-light: #6B7B3E;
     
-    /* Couleurs d'accent - Palette paysagisme */
-    --accent-sand: #d8c7a5;
-    --accent-olive: #7e8a50;
-    --accent-forest: #5a6641;
-    --accent-moss: #9fa67a;
-    --accent-earth: #8d7253;
+    /* Couleur secondaire - Vert olive clair */
+    --secondary: #8B9A5B;
+    --secondary-dark: #6B7A48;
+    --secondary-light: #A5B07A;
     
-    /* Gradients cohérents */
-    --gradient-tech: linear-gradient(135deg, #d8c7a5 0%, #7e8a50 100%);
-    --gradient-design: linear-gradient(135deg, #e2d4b5 0%, #8d7253 100%);
-    --gradient-full: linear-gradient(135deg, #d8c7a5 0%, #7e8a50 45%, #5a6641 100%);
-    --gradient-glow: linear-gradient(135deg, #9fa67a 0%, #d8c7a5 100%);
+    /* Fond et backgrounds */
+    --bg-primary: #2A3318;
+    --bg-secondary: #3D4A22;
+    --bg-tertiary: #4A5D32;
+    --bg-dark-warm: #1F2A10;
+    --bg-card: rgba(139, 154, 91, 0.95);
+    
+    /* Textes - Contraste adapté au vert olive */
+    --text-primary: #F5F5F0;
+    --text-secondary: #D4D8C8;
+    --text-tertiary: #B8BCA8;
+    --text-on-primary: #F0F2E8;
+    
+    /* Couleurs d'accent - Variations vert olive */
+    --accent-sand: #C8D4A8;
+    --accent-olive: #8B9A5B;
+    --accent-forest: #556B2F;
+    --accent-moss: #9CAF88;
+    --accent-earth: #6B7B3E;
+    --accent-terre: #5A6B35;
+    --accent-warm: #7A8B4A;
+    
+    /* Contraste WCAG - Texte sur fond sombre */
+    --contrast-text: #F5F5F0;
+    --contrast-text-muted: #C8D0B8;
     
     /* Glassmorphism optimisé */
-    --glass-bg: rgba(255, 255, 255, 0.04);
-    --glass-bg-hover: rgba(255, 255, 255, 0.08);
-    --glass-border: rgba(255, 255, 255, 0.12);
-    --glass-border-hover: rgba(216, 199, 165, 0.4);
+    --glass-bg: rgba(85, 107, 47, 0.85);
+    --glass-bg-hover: rgba(85, 107, 47, 0.95);
+    --glass-border: rgba(245, 245, 240, 0.15);
+    --glass-border-hover: rgba(165, 176, 122, 0.4);
     --glass-blur: blur(20px);
     
-    /* Shadows avec cohérence */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.25);
-    --shadow-lg: 0 10px 35px rgba(45, 38, 23, 0.35);
-    --shadow-xl: 0 20px 50px rgba(34, 28, 19, 0.35);
-    --shadow-glow-earth: 0 0 30px rgba(157, 149, 119, 0.45);
-    --shadow-glow-olive: 0 0 30px rgba(126, 138, 80, 0.45);
-    --shadow-glow-moss: 0 0 30px rgba(159, 166, 122, 0.4);
-    --shadow-glow: var(--shadow-glow-earth);
+    /* Shadows avec cohérence olive */
+    --shadow-sm: 0 2px 8px rgba(85, 107, 47, 0.2);
+    --shadow-md: 0 4px 16px rgba(85, 107, 47, 0.25);
+    --shadow-lg: 0 10px 35px rgba(85, 107, 47, 0.3);
+    --shadow-xl: 0 20px 50px rgba(85, 107, 47, 0.35);
+    --shadow-glow-earth: 0 0 30px rgba(85, 107, 47, 0.35);
+    --shadow-glow-olive: 0 0 30px rgba(139, 154, 91, 0.4);
+    --shadow-glow-moss: 0 0 30px rgba(156, 175, 136, 0.4);
+    --shadow-glow: var(--shadow-glow-olive);
     
     /* Spacing System */
     --spacing-xs: 8px;
@@ -78,6 +95,13 @@
     --z-fixed: 300;
     --z-modal: 400;
     --z-nav: 1000;
+    
+    /* Gradients - Palette Vert Olive */
+    --gradient-tech: linear-gradient(135deg, #556B2F 0%, #8B9A5B 50%, #6B7B3E 100%);
+    --gradient-design: linear-gradient(135deg, #6B7B3E 0%, #8B9A5B 50%, #9CAF88 100%);
+    --gradient-full: linear-gradient(135deg, #556B2F 0%, #8B9A5B 25%, #6B7B3E 50%, #9CAF88 75%, #556B2F 100%);
+    --gradient-olive-light: linear-gradient(135deg, #8B9A5B 0%, #A5B07A 100%);
+    --gradient-olive-dark: linear-gradient(135deg, #3D4A22 0%, #556B2F 100%);
 }
 
 /* ===================================
@@ -322,8 +346,8 @@ main#back::after {
     padding: var(--spacing-lg) 0;
     background: var(--bg-secondary);
     position: relative;
-    border-top: 1px solid var(--glass-border);
-    border-bottom: 1px solid var(--glass-border);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .banner::before,
@@ -556,7 +580,7 @@ a.download-btn::before {
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-md);
     font-size: 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     color: var(--text-primary);
     transition: all var(--transition-base);
     font-family: var(--font-base);
@@ -566,8 +590,8 @@ a.download-btn::before {
 .contact-form textarea:focus {
     outline: none;
     border-color: var(--accent-olive);
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 0 3px rgba(126, 138, 80, 0.12);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 3px rgba(126, 138, 80, 0.15);
 }
 
 .contact-form textarea {

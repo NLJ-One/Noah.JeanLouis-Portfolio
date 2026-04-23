@@ -28,13 +28,13 @@
     width: 100%;
     max-width: 400px;
     border-radius: var(--radius-xl, 24px);
-    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 12px 40px rgba(85, 107, 47, 0.4);
     transition: all 0.3s ease;
 }
 
 #JATcouverture img:hover {
     transform: scale(1.05);
-    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.6);
+    box-shadow: 0 20px 60px rgba(85, 107, 47, 0.6);
 }
 
 /* Grilles projets */

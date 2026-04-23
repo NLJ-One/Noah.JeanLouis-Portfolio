@@ -21,9 +21,9 @@
 
 .back-link:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: var(--accent-blue);
+    border-color: var(--accent-olive);
     transform: translateX(-4px);
-    box-shadow: var(--shadow-glow-blue);
+    box-shadow: var(--shadow-glow-olive);
 }
 
 /* Galerie masonnerie - Optimisée */
@@ -44,11 +44,11 @@
     border-radius: var(--radius-lg, 16px);
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-md);
     border: 2px solid transparent;
     opacity: 1;
     contain: layout style paint;
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(59, 130, 246, 0.05));
+    background: linear-gradient(135deg, rgba(216, 199, 165, 0.08), rgba(126, 138, 80, 0.08));
 }
 
 /* Loading state - placeholder background */
@@ -59,8 +59,8 @@
 
 .photos-gallery img:hover {
     transform: scale(1.05) translateY(-8px);
-    box-shadow: 0 16px 48px rgba(139, 92, 246, 0.5);
-    border-color: var(--accent-purple);
+    box-shadow: 0 16px 48px rgba(139, 115, 85, 0.35);
+    border-color: var(--accent-terre);
     opacity: 1;
 }
 
@@ -144,9 +144,9 @@
 }
 
 .close:hover {
-    color: var(--accent-cyan);
+    color: var(--accent-moss);
     background: rgba(0, 0, 0, 0.7);
-    border-color: var(--accent-blue);
+    border-color: var(--accent-olive);
     transform: rotate(90deg);
 }
 
@@ -179,8 +179,8 @@
 
 .lightbox-btn:hover {
     background: rgba(0, 0, 0, 0.6);
-    border-color: var(--accent-blue);
-    box-shadow: var(--shadow-glow-blue);
+    border-color: var(--accent-olive);
+    box-shadow: var(--shadow-glow-olive);
     transform: scale(1.1);
 }
 

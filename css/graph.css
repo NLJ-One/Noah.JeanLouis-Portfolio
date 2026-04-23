@@ -70,7 +70,7 @@
 #RF img:hover, #Ferrari img:hover, #Carlos img:hover, 
 #Drake img:hover, #KV img:hover, #Kb img:hover {
     transform: scale(1.05);
-    box-shadow: 0 12px 32px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 12px 32px rgba(85, 107, 47, 0.4);
 }
 
 /* Descriptions */
