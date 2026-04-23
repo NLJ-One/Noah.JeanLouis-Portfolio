@@ -104,8 +104,9 @@ body {
 }
 
 #back {
-    background-image: url(/images/PC&.jpg);
+    background-image: url(/images/plan1.png);
     background-size: cover;
+    background-size: 100%;
 }
 
 /* ===================================
