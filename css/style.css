@@ -33,7 +33,7 @@
     --accent-olive: #8B9A5B;
     --accent-forest: #556B2F;
     --accent-moss: #9CAF88;
-    --accent-earth: #523807;
+    --accent-earth: #cab285;
     --accent-terre: #5A6B35;
     --accent-warm: #7A8B4A;
     
@@ -129,7 +129,9 @@ body {
 }
 
 #back {
-    background-image: url(/images/plan1.png);
+    background-image: 
+        linear-gradient(to right, rgba(61, 74, 34, 0.95) 0%, rgba(85, 107, 47, 0.7) 55%, rgba(85, 107, 47, 0.3) 70%, transparent 100%),
+        url(/images/plan1.png);
     background-size: cover;
     background-size: 100%;
 }
